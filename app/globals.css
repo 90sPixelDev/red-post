@@ -14,7 +14,11 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+*,
+html {
+	box-sizing: border-box;
+}
+
 body {
-	color: var(--foreground);
 	font-family: 'Open Sans', Helvetica, sans-serif;
 }
