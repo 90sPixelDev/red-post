@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import { Montserrat, Open_Sans } from 'next/font/google';
 import './globals.css';
 import Header from './components/Header';
+import Footer from './components/Footer';
+
+import { ThemeProvider } from 'next-themes';
 
 const openSans = Open_Sans({
 	variable: '--font-open-sans',
@@ -25,12 +28,15 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang='en'>
+		<html suppressHydrationWarning lang='en'>
 			<body
 				className={`${openSans.variable} ${montserrat.variable} antialiased`}
 			>
-				<Header />
-				{children}
+				<ThemeProvider attribute='class'>
+					<Header />
+					{children}
+					<Footer />
+				</ThemeProvider>
 			</body>
 		</html>
 	);
