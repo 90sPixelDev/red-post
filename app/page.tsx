@@ -1,8 +1,19 @@
+import { RandomSpaceDiv } from './components/RandomSpaceDiv';
+
 export default function Home() {
 	const styles = {
-		container:
-			'flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans bg-linear-65 from-purple-400 to-pink-300 dark:from-purple-900 dark:to-pink-900 gap-2',
+		container: 'flex flex-col gap-4',
 	};
 
-	return <div className={styles.container}></div>;
+	return (
+		<div className={styles.container}>
+			<RandomSpaceDiv />
+			<RandomSpaceDiv />
+			<RandomSpaceDiv />
+			<RandomSpaceDiv />
+			<RandomSpaceDiv />
+			<RandomSpaceDiv />
+			<RandomSpaceDiv />
+		</div>
+	);
 }

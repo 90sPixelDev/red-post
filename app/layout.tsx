@@ -27,14 +27,20 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
+	const styles = {
+		body: 'fixed h-[100vh] w-[100vw] flex flex-col',
+		contentWrapper:
+			'bg-linear-65 from-purple-400 to-pink-300 dark:from-purple-900 dark:to-pink-900 overflow-y-auto p-2',
+	};
+
 	return (
 		<html suppressHydrationWarning lang='en'>
 			<body
-				className={`${openSans.variable} ${montserrat.variable} antialiased`}
+				className={`${openSans.variable} ${montserrat.variable} ${styles.body} antialiased`}
 			>
 				<ThemeProvider attribute='class'>
 					<Header />
-					{children}
+					<div className={styles.contentWrapper}>{children}</div>
 					<Footer />
 				</ThemeProvider>
 			</body>
