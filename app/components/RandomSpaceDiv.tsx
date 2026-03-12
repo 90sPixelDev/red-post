@@ -1,7 +1,7 @@
 export const RandomSpaceDiv = () => {
 	const styles = {
 		container:
-			'flex flex-col place-self-center h-fit w-[50vw] bg-red-300/70 dark:bg-red-700/40 rounded-lg shadow-md border-red-400 p-2 py-4 text-center',
+			'flex flex-col place-self-center h-fit w-[50vw] bg-red-300/40 dark:bg-red-700/40 rounded-lg shadow-md border-red-400 p-2 py-4 text-center',
 		title: 'font-medium mb-2',
 	};
 
