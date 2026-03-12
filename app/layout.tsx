@@ -30,7 +30,7 @@ export default function RootLayout({
 	const styles = {
 		body: 'fixed h-[100vh] w-[100vw] flex flex-col',
 		contentWrapper:
-			'bg-linear-65 from-purple-400 to-pink-300 dark:from-purple-900 dark:to-pink-900 overflow-y-auto p-2',
+			'min-h-[calc(100vh-100px)] bg-linear-65 from-purple-400 to-pink-300 dark:from-purple-900 dark:to-pink-900 overflow-y-auto p-2',
 	};
 
 	return (
