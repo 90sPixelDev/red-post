@@ -14,6 +14,9 @@ export default function Home() {
 			<RandomSpaceDiv />
 			<RandomSpaceDiv />
 			<RandomSpaceDiv />
+			<RandomSpaceDiv />
+			<RandomSpaceDiv />
+			<RandomSpaceDiv />
 		</div>
 	);
 }
